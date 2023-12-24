@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import css from './SearchBar.module.css';
+import css from './Searchbar.module.css';
 
-const SearchBar = ({ onSubmit }) => {
+const Searchbar = ({ onSubmit }) => {
   const [searchQuery, setSearchQuery] = useState('');
 
   const handleChange = e => {
@@ -36,4 +36,4 @@ const SearchBar = ({ onSubmit }) => {
   );
 };
 
-export default SearchBar;
+export default Searchbar;
