@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Searchbar from './Searchbar/Searchbar';
+import SearchBar from './SearchBar/SearchBar';
 import ImageGallery from './ImageGallery/ImageGallery';
 import Button from './Button/Button';
 import Loader from './Loader/Loader';
@@ -70,7 +70,7 @@ const App = () => {
 
   return (
     <div>
-      <Searchbar onSubmit={handleSearchSubmit} />
+      <SearchBar onSubmit={handleSearchSubmit} />
       {isEmpty && <h2>Sorry. There are no images ... 😭</h2>}
       {error && <h2>{error}</h2>}
       {images.length > 0 && (
